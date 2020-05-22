@@ -25,6 +25,11 @@ namespace Proyecto
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/bundles/select2")
+                .Include("~/Scripts/select2.js"));
+            bundles.Add(new StyleBundle("~/Content/select2")
+                .Include("~/")
+                .Include("~/Content/css/select2.css"));
         }
     }
 }
